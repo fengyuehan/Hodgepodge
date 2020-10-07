@@ -1,4 +1,4 @@
-package com.example.hodgepodgeapplication;
+package com.example.hodgepodge;
 
 import org.junit.Test;
 
