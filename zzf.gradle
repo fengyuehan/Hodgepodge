@@ -89,10 +89,19 @@ ext{
             "zoomImageLib"                : "cn.yc:zoomImageLib:1.0.1",
 
             //tools
-            "eventbus"                  : "org.greenrobot:eventbus:3.0.0",
-            "utilcode"                  : "com.blankj:utilcode:1.12.5",
-            "easypermissions"           : "pub.devrel:easypermissions:1.0.1",
-            "zxing"                     : "com.google.zxing:core:${version["zxing_version"]}",
-            "AppStart"                  : "com.github.NoEndToLF:AppStartFaster:1.0.3"
+            "eventbus"                    : "org.greenrobot:eventbus:3.0.0",
+            "utilcode"                    : "com.blankj:utilcode:1.12.5",
+            "easypermissions"             : "pub.devrel:easypermissions:1.0.1",
+            "zxing"                       : "com.google.zxing:core:${version["zxing_version"]}",
+            "AppStart"                    : "com.github.NoEndToLF:AppStartFaster:1.0.3",
+            "BaseRecyclerViewAdapterHelper" : "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.50",
+            "immersionbar"                : "com.gyf.immersionbar:immersionbar:3.0.0",
+            "SmartRefreshLayout"          : "com.scwang.smartrefresh:SmartRefreshLayout:1.1.0",
+            "SmartRefreshHeader"          : "com.scwang.smartrefresh:SmartRefreshHeader:1.1.0",
+            "kprogresshud"                : "com.kaopiz:kprogresshud:1.2.0",
+            "rxlifecycle"                 : "com.trello.rxlifecycle2:rxlifecycle:2.2.2",
+            "rxlifecycle-android"         : "com.trello.rxlifecycle2:rxlifecycle-android:2.2.2",
+            "rxlifecycle-components"      : "com.trello.rxlifecycle2:rxlifecycle-components:2.2.2"
+
     ]
 }

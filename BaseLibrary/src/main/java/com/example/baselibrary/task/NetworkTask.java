@@ -5,6 +5,8 @@ import com.wxy.appstartfaster.task.AppStartTask;
 import com.yc.toollib.BuildConfig;
 import com.yc.toollib.network.utils.NetworkTool;
 
+import java.util.List;
+
 public class NetworkTask extends AppStartTask {
     @Override
     public void run() {
@@ -21,6 +23,11 @@ public class NetworkTask extends AppStartTask {
 
     @Override
     public boolean isRunOnMainThread() {
-        return true;
+        return false;
+    }
+
+    @Override
+    public List<Class<? extends AppStartTask>> getDependsTaskList() {
+        return null;
     }
 }

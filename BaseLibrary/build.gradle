@@ -113,6 +113,14 @@ dependencies {
     api rootProject.ext.dependencies["YCAndroidTool"]
     api rootProject.ext.dependencies["WebViewLib"]
     api rootProject.ext.dependencies["AppStart"]
+    api rootProject.ext.dependencies["BaseRecyclerViewAdapterHelper"]
+    api rootProject.ext.dependencies["immersionbar"]
+    api rootProject.ext.dependencies["SmartRefreshLayout"]
+    api rootProject.ext.dependencies["SmartRefreshHeader"]
+    api rootProject.ext.dependencies["kprogresshud"]
+    api rootProject.ext.dependencies["rxlifecycle"]
+    api rootProject.ext.dependencies["rxlifecycle-android"]
+    api rootProject.ext.dependencies["rxlifecycle-components"]
 
     annotationProcessor rootProject.ext.dependencies["router-compiler"]
 

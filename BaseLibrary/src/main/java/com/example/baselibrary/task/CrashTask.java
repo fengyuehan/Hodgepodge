@@ -6,7 +6,6 @@ import com.yc.toollib.crash.CrashHandler;
 import com.yc.toollib.crash.CrashListener;
 import com.yc.toollib.crash.CrashToolUtils;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class CrashTask extends AppStartTask {
@@ -56,4 +55,9 @@ public class CrashTask extends AppStartTask {
         dependsTaskList.add(TestAppStartTaskThree.class);
         return dependsTaskList;
     }*/
+
+    @Override
+    public List<Class<? extends AppStartTask>> getDependsTaskList() {
+        return null;
+    }
 }

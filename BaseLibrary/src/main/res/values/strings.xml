@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HodgepodgeApplication</string>
+    <string name="tips_no_records">没有任何数据</string>
+    <string name="tips_no_more_desc">没有更多数据</string>
+    <string name="tips_more_desc">加载查看更多</string>
+    <string name="tip_empty">暂无数据</string>
+</resources>
