@@ -28,7 +28,11 @@ ext{
             constraintVersion       : "1.1.2",
             okhttp                  : "4.7.2",
             zxing_version           : "3.3.3",
-            recyclerView_x          : "1.0.0"
+            recyclerView_x          : "1.0.0",
+            'rxjava'                : '2.2.14',
+            'rx_android'            : '2.1.1',
+            'retrofit'              : '2.6.2',
+            'okhttp3'               : '4.2.2'
     ]
 
     dependencies = [
@@ -101,7 +105,19 @@ ext{
             "kprogresshud"                : "com.kaopiz:kprogresshud:1.2.0",
             "rxlifecycle"                 : "com.trello.rxlifecycle2:rxlifecycle:2.2.2",
             "rxlifecycle-android"         : "com.trello.rxlifecycle2:rxlifecycle-android:2.2.2",
-            "rxlifecycle-components"      : "com.trello.rxlifecycle2:rxlifecycle-components:2.2.2"
+            "rxlifecycle-components"      : "com.trello.rxlifecycle2:rxlifecycle-components:2.2.2",
+            "agentweb"                    : "com.just.agentweb:agentweb:4.1.2",
+            "filechooser"                 : "com.just.agentweb:filechooser:4.1.2",
+            "gson"                        : 'com.google.code.gson:gson:2.8.5',
+
+            "retrofit"                    : "com.squareup.retrofit2:retrofit:${version["retrofit"]}",
+            "retrofit_adapter"            : "com.squareup.retrofit2:adapter-rxjava2:${version["retrofit"]}",
+            "retrofit_gson"               : "com.squareup.retrofit2:converter-gson:${version["retrofit"]}",
+            "rxjava"                      : "io.reactivex.rxjava2:rxjava:${version["rxjava"]}",
+            "rx_android"                  : "io.reactivex.rxjava2:rxandroid:${version["rx_android"]}",
+            "logger"                      : "com.github.tianzhijiexian:logger:1.1.9",
+            "crashreport"                 : "com.tencent.bugly:crashreport:latest.release",
+            "nativecrashreport"           : "com.tencent.bugly:nativecrashreport:latest.release"
 
     ]
 }

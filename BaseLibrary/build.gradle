@@ -58,6 +58,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
     lintOptions {
         abortOnError false
     }
@@ -121,6 +122,8 @@ dependencies {
     api rootProject.ext.dependencies["rxlifecycle"]
     api rootProject.ext.dependencies["rxlifecycle-android"]
     api rootProject.ext.dependencies["rxlifecycle-components"]
+    api rootProject.ext.dependencies["agentweb"]
+    api rootProject.ext.dependencies["filechooser"]
 
     annotationProcessor rootProject.ext.dependencies["router-compiler"]
 
