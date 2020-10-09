@@ -1,3 +1,5 @@
+include ':lib-image-gif'
+include ':GlideLibrary'
 include ':HttpLibrary'
 include ':BaseLibrary'
 include ':app'

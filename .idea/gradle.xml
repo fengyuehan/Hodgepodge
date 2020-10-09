@@ -12,8 +12,10 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/BaseLibrary" />
+            <option value="$PROJECT_DIR$/GlideLibrary" />
             <option value="$PROJECT_DIR$/HttpLibrary" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/lib-image-gif" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

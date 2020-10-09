@@ -3,7 +3,6 @@ package com.example.httplibrary;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.provider.SyncStateContract;
 import android.text.TextUtils;
 
 import com.blankj.utilcode.util.NetworkUtils;
@@ -17,15 +16,10 @@ import com.example.httplibrary.intercepter.ErrorInterceptor;
 import com.example.httplibrary.intercepter.HeadInterceptor;
 import com.example.httplibrary.intercepter.LogInterceptor;
 import com.example.httplibrary.util.HttpsUtil;
-import com.example.httplibrary.util.ProgressInterceptor;
-import com.orhanobut.logger.Logger;
-import com.tencent.bugly.crashreport.CrashReport;
 import com.trello.rxlifecycle2.android.BuildConfig;
 
-import java.io.File;
 import java.util.concurrent.TimeUnit;
 
-import okhttp3.Cache;
 import okhttp3.CacheControl;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
