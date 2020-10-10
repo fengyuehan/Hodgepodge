@@ -124,7 +124,24 @@ dependencies {
     api rootProject.ext.dependencies["rxlifecycle-components"]
     api rootProject.ext.dependencies["agentweb"]
     api rootProject.ext.dependencies["filechooser"]
-
+    api rootProject.ext.dependencies["dagger"]
     annotationProcessor rootProject.ext.dependencies["router-compiler"]
+    annotationProcessor rootProject.ext.dependencies["dagger-compiler"]
+
+    /*网络请求*/
+    api rootProject.ext.dependencies["gson"]
+    api rootProject.ext.dependencies["retrofit"]
+    api rootProject.ext.dependencies["retrofit_adapter"]
+    api rootProject.ext.dependencies["retrofit_gson"]
+    api rootProject.ext.dependencies["rxjava"]
+    api rootProject.ext.dependencies["rx_android"]
+    api rootProject.ext.dependencies["logger"]
+    api rootProject.ext.dependencies["utilcode"]
+    api rootProject.ext.dependencies["rxlifecycle"]
+    api rootProject.ext.dependencies["rxlifecycle-android"]
+    api rootProject.ext.dependencies["rxlifecycle-components"]
+    api rootProject.ext.dependencies["crashreport"]
+    api rootProject.ext.dependencies["nativecrashreport"]
+
 
 }

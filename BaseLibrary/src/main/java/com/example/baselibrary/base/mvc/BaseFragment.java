@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.example.baselibrary.base.BaseActivity;
 import com.trello.rxlifecycle2.components.support.RxFragment;
 
 public abstract class BaseFragment extends RxFragment {
@@ -45,12 +44,15 @@ public abstract class BaseFragment extends RxFragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        init();
         initData();
         initListener();
         isViewCreated = true;
         mIsLazyLoaded = false;
         lazyLoad();
     }
+
+    protected abstract void init();
 
     private void lazyLoad() {
         /**

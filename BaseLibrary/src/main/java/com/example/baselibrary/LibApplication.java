@@ -10,6 +10,9 @@ import android.webkit.WebView;
 import androidx.multidex.MultiDex;
 
 import com.bumptech.glide.Glide;
+import com.example.baselibrary.dagger.AppComponent;
+import com.example.baselibrary.dagger.AppModule;
+import com.example.baselibrary.dagger.DaggerAppComponent;
 import com.example.baselibrary.task.ARouterTask;
 import com.example.baselibrary.task.AppInitTask;
 import com.example.baselibrary.task.ConfigTask;
@@ -25,6 +28,7 @@ import com.wxy.appstartfaster.dispatcher.AppStartTaskDispatcher;
 public class LibApplication extends Application {
     private static final String MAIN_PROCESS_NAME = "com.example.hodgepodge";
     private static LibApplication instance;
+    private static AppComponent mAppComponent;
 
     public static LibApplication getInstance(){
         return instance;
@@ -57,7 +61,16 @@ public class LibApplication extends Application {
                 .addAppStartTask(new ConfigTask())
                 .start()
                 .await();
+        MultiDex.install(this);
+        mAppComponent = DaggerAppComponent
+                .builder()
+                .appModule(new AppModule())
+                .build();
         initWebView();
+    }
+
+    public static AppComponent getAppComponent(){
+        return mAppComponent;
     }
 
     /**
@@ -93,7 +106,7 @@ public class LibApplication extends Application {
     @Override
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(base);
-        MultiDex.install(base);
+
     }
 
     @Override

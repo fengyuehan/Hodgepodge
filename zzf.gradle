@@ -117,7 +117,9 @@ ext{
             "rx_android"                  : "io.reactivex.rxjava2:rxandroid:${version["rx_android"]}",
             "logger"                      : "com.github.tianzhijiexian:logger:1.1.9",
             "crashreport"                 : "com.tencent.bugly:crashreport:latest.release",
-            "nativecrashreport"           : "com.tencent.bugly:nativecrashreport:latest.release"
+            "nativecrashreport"           : "com.tencent.bugly:nativecrashreport:latest.release",
+            "dagger"                      : "com.google.dagger:dagger:2.24",
+            "dagger-compiler"             : "com.google.dagger:dagger-compiler:2.24"
 
     ]
 }

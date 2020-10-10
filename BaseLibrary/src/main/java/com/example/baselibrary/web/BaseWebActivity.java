@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.example.baselibrary.R;
-import com.example.baselibrary.base.BaseActivity;
+import com.example.baselibrary.base.mvc.BaseActivity;
 import com.example.baselibrary.listener.IHideIndicator;
 import com.just.agentweb.AgentWeb;
 import com.just.agentweb.AgentWebSettingsImpl;

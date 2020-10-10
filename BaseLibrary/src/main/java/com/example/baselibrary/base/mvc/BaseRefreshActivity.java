@@ -9,7 +9,6 @@ import androidx.annotation.Nullable;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.example.baselibrary.R;
-import com.example.baselibrary.base.BaseActivity;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.listener.OnRefreshLoadMoreListener;
@@ -31,7 +30,13 @@ public abstract class BaseRefreshActivity<T> extends BaseActivity {
 
     private void initSmartRefreshLayout() {
         mRefreshLayout = setRefreshLayout();
+        if (mRefreshLayout == null) {
+            throw new IllegalStateException("please set refreshLayout!");
+        }
         mAdapter = setRefreshAdapter();
+        if (mAdapter == null) {
+            throw new IllegalStateException("please set refreshAdapter!");
+        }
         setSmartRefreshLayoutListener();
     }
 
