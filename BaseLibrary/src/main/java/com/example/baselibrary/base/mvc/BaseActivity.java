@@ -1,6 +1,7 @@
 package com.example.baselibrary.base.mvc;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +14,7 @@ import com.example.baselibrary.listener.ICancelImmersion;
 import com.gyf.immersionbar.ImmersionBar;
 import com.kaopiz.kprogresshud.KProgressHUD;
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
+import com.yc.toollib.network.floating.IFloatWindow;
 
 public abstract class BaseActivity extends RxAppCompatActivity {
     private KProgressHUD mProgressDialog;
@@ -61,23 +63,23 @@ public abstract class BaseActivity extends RxAppCompatActivity {
     }
 
     public void showProgress() {
-        showProgress(-1, true);
+        showProgress(null, true);
     }
 
-    public void showProgress(int resId) {
-        showProgress(resId, true);
+    public void showProgress(String msg) {
+        showProgress(msg, true);
     }
 
-    public void showProgress(int resId, boolean cancellable) {
+    public void showProgress(String msg, boolean cancellable) {
         if (mProgressDialog == null) {
             mProgressDialog = KProgressHUD.create(this)
                     .setStyle(KProgressHUD.Style.SPIN_INDETERMINATE);
         }
-
-        mProgressDialog.setCancellable(cancellable);
-        if (resId != -1) {
-            mProgressDialog.setLabel(getString(resId));
+        if (!TextUtils.isEmpty(msg)){
+            mProgressDialog.setLabel(msg);
         }
+        mProgressDialog.setCancellable(cancellable);
+
         mProgressDialog.show();
     }
 

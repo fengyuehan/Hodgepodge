@@ -119,7 +119,16 @@ ext{
             "crashreport"                 : "com.tencent.bugly:crashreport:latest.release",
             "nativecrashreport"           : "com.tencent.bugly:nativecrashreport:latest.release",
             "dagger"                      : "com.google.dagger:dagger:2.24",
-            "dagger-compiler"             : "com.google.dagger:dagger-compiler:2.24"
+            "dagger-compiler"             : "com.google.dagger:dagger-compiler:2.24",
+            "webview"                     : 'com.tencent.tbs.tbssdk:sdk:43939',
+
+            "lifecycle-extensions"        : "androidx.lifecycle:lifecycle-extensions:2.2.0",
+            "lifecycle-viewmodel"         : "androidx.lifecycle:lifecycle-viewmodel:2.2.0",
+            "lifecycle-livedata"          : "androidx.lifecycle:lifecycle-livedata:2.2.0",
+            "lifecycle-runtime"           : "androidx.lifecycle:lifecycle-runtime:2.2.0",
+            "lifecycle-compiler"          : "androidx.lifecycle:lifecycle-compiler:2.2.0",
+            "lifecycle-common-java8"      : "androidx.lifecycle:lifecycle-common-java8:2.2.0",
+            "loadState"                   : 'com.github.SelfZhangTQ:loadState:1.1.0'
 
     ]
 }

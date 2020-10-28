@@ -142,6 +142,15 @@ dependencies {
     api rootProject.ext.dependencies["rxlifecycle-components"]
     api rootProject.ext.dependencies["crashreport"]
     api rootProject.ext.dependencies["nativecrashreport"]
+    api rootProject.ext.dependencies["webview"]
+
+    api rootProject.ext.dependencies["lifecycle-extensions"]
+    api rootProject.ext.dependencies["lifecycle-viewmodel"]
+    api rootProject.ext.dependencies["lifecycle-livedata"]
+    api rootProject.ext.dependencies["lifecycle-runtime"]
+    annotationProcessor rootProject.ext.dependencies["lifecycle-compiler"]
+    api rootProject.ext.dependencies["lifecycle-common-java8"]
+    api rootProject.ext.dependencies["loadState"]
 
 
 }
